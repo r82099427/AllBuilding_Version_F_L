@@ -20,7 +20,7 @@
 			</div>
 			<div id="middle">
 				<img src="img/element/booktag.png" class="booktag" />
-				<div class="subtitle" :class="{animation: animation}">{{subtitle}}</div>
+				<div style="font-weight:bold;" class="subtitle" :class="{animation: animation}">{{subtitle}}</div>
 				<div class="text">
 					<div class="sketch">
 						<img :src="'img/sketch/' + sub.sketch" v-for="(sub, s) in list" ref="sketchs" />
@@ -59,7 +59,7 @@
 				<div class="learn-more">
 					<div class="more" :class="{'animation-delay': animationDelay}">
 						<div class="en">LEARN MORE</div>
-						<div class="ch">了解更多</div>
+						<div class="ch" style="font-weight:bold;">了解更多</div>
 					</div>
 				</div>
 				<textarea class="desc" disabled :class="{animation: animation}">{{description}}</textarea>
